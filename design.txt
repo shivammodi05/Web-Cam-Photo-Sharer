@@ -1,0 +1,26 @@
+Title : WebCam Ploto Sharer
+Description : An app that starts the computer webcam, lets the user capture a photo and uploads the photo to the web and creates a sharable link.
+Objects : WebCam
+            start()
+            stop()
+            capture()
+            FileSharer : (reusable class)
+                filepath
+                api
+                share()
+
+
+noun : app, webcam, user, photo, web, link
+app object -> not required
+user object -> does the app differentiate in the types of users -> no -> not required
+Photo object -> to get photo, we only need photo path, so not required -> photo path is a string
+web object -> we will need web to upload the file and generate sharable link -> so, instead we create a fileSharer object
+link object -> a string -> not required
+
+
+action (verbs) : starts, lets, capture, uploads, creates -> onclick, api, share
+
+attributes/properties of the object to create class blueprint
+kv file for frontend, language to create and apply to the screen
+
+sister objects, image screen, register to screen manager
